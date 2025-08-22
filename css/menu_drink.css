@@ -1,0 +1,27 @@
+.menu_new, .menu_coffee, .menu_de, .menu_md  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    font-weight: var(--font_medium);
+    border: 1px solid #e7e7e7;
+}
+
+.menu_drink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--root_bg_color);
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: var(--font_semi_bold);
+    border-left: 1px solid var(--primary_color);
+    border-right: 1px solid var(--primary_color);
+    border-bottom: 5px solid var(--primary_color);
+    background: #fff5f7;
+    color: #fc4771;
+}

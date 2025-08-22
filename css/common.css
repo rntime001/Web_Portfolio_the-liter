@@ -1,0 +1,352 @@
+/* -----------------------------------header 시작---------------------------------------------------------------- */
+
+#header_wrap {
+    width: 100%;
+    height: 120px;
+}
+
+.header_root_box {
+    width: 100%;
+    height: 120px;
+    background-color: var(--root_bg_color);
+    border-bottom: 1px solid var(--primary_color);
+    box-shadow: var(--img_box_box-shadow);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_bg {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--root_bg_color);
+    border-bottom: 1px solid var(--primary_color);
+}
+
+.logo_box {
+    display: flex;
+    align-items: center;
+}
+
+.logo_box img{
+    display: block;
+    width: 72px;
+    height: auto;
+}
+
+.navi_box {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+    margin: 0px 11px 0px;
+}
+
+.menu-item>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--root_bg_color);
+    padding: 10px 0;
+    box-shadow: var(--img_box_box-shadow);
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 100;
+    min-width: 140px;
+}
+
+.menu-item:hover>li>ul {
+    opacity: 1;
+    visibility: visible;
+    max-height: 300px;
+}
+.menu-item>li>ul>li:hover {
+    color: var(--primary_color);
+    text-decoration: underline;
+}
+
+.main_na_font {
+    font-size: 16px;
+    font-weight: var(--font_semi_bold);
+    display: block;
+    margin: 16px 0px 16px ;
+}
+
+.main_na_font:hover {
+    color: var(--primary_color);
+}
+
+.na_child {
+    font-size: 13px;
+    font-weight: var(--font_medium);
+    margin-bottom: 8px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.utill_box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header_join {
+    width: 126px;
+    height: 36px;
+    background-color: var(--primary_color);
+    color: var(--sub_text_color);
+    font-size: 15px;
+    font-weight: var(--font_semi_bold);
+    line-height: 36px;
+    border-radius: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utill_box > a:hover{
+    color: var(--primary_color);
+    background-color: var(--sub_text_color);
+    border: 1px solid var(--primary_color);
+}
+
+.lang_box {
+    display: flex;
+    align-items: center;
+}
+
+.lang_img > img {
+    display: block;
+    width: 18px;
+    height: auto;
+    margin-right: 4px;
+}
+
+.kr, .en {
+    font-size: 14px;
+    font-weight: var(--font_medium);
+    line-height: 14px;
+    padding: 0 6px;
+}
+
+.line_lang {
+    background-color: var(--secondary_color);
+    width: 2px;
+    height: 12px;
+}
+
+/* -----------------------------------aside 시작---------------------------------------------------------------- */
+
+#aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+#sns {
+    width: 44px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 120px;
+    top: 160px;
+    z-index: 1000;
+    gap: 3px
+}
+
+.to_top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.top_btn {
+    width: 60px;
+    height: 60px;
+    background-color: var(--point_color);
+    border-radius: 6px;
+    color: var(--root_bg_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    box-shadow: var(--mini_button_box-shadow);
+    position: fixed;
+    right: 110px;
+    bottom: 40px;
+    transition: opacity 0.5s ease;
+    z-index: 999;
+}
+
+.top_btn:hover {
+    border: 2px solid var(--point_color);
+    background: var(--root_bg_color);
+    color: var(--point_color);
+}
+
+.top_btn:hover .top_che {
+    content: url(/images/common/top_che_red.svg);
+}
+
+/* -----------------------------------footer 시작---------------------------------------------------------------- */
+
+#footer_bg {
+    width: 100%;
+    height: 294px;
+    background-color: var(--primary_color);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_box {
+    width: 1180px;
+    height: 294px;
+    background-color: var(--primary_color);
+    position: relative;
+    display: flex;
+    color: var(--root_bg_color);
+}
+
+.footer_logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+}
+.sitemap_box {
+    display: flex;
+    gap: 26px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+.brand, .menu, .store, .community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sitemap_txt1 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: var(--font_semi_bold);
+    line-height: 1.0;
+}
+
+.sitemap_txt1::after {
+    content: ' ';
+    display: block;
+    width: auto;
+    border: 1px solid var(--sub_text_color);
+}
+
+.sitemap_txt2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    font-weight: var(--font_light);
+    gap: 11px;
+}
+
+.sitemap_txt2 li {
+    transition: all ease 0.2s;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.sitemap_txt2 li:hover {
+    transform: scale(1.06);
+}
+
+.c_info_box {
+    display: flex;
+    align-items: flex-end
+}
+
+.c_info_box_child {
+    position: absolute;
+    bottom: 75px;
+    left: 67px;
+}
+
+.info_title {
+    font-size: 20px;
+    font-weight: var(--font_extra_bold);
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.address_box, .tel_box, .c_num {
+    font-size: 14px;
+    font-weight: var(--font_medium);
+    display: flex;
+    opacity: 0.8;
+}
+
+.copy {
+    font-size: 13px;
+    font-weight: var(--font_extra_bold);
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.etc_info:after {
+    content:"|";
+    margin:0 6px
+}
+
+/* ================== 공용 좌우 페이드 인 연출 ================== */
+/* 초기 상태 (왼쪽에서 진입) */
+.fade-left-seed {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 600ms ease, transform 600ms ease;
+}
+
+/* 초기 상태 (오른쪽에서 진입) */
+.fade-right-seed {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 600ms ease, transform 600ms ease;
+}
+
+/* 등장 상태 */
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 모션 감소 환경 존중 */
+@media (prefers-reduced-motion: reduce) {
+    .fade-left-seed,
+    .fade-right-seed {
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+}

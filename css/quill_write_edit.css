@@ -1,0 +1,107 @@
+/* 에디터 전체 wrapper 영역 */
+#editor {
+    border-radius: 0 0 6px 6px;
+    font-family: 'Pretendard', sans-serif !important;
+    background: #fff;
+    height: 600px ;              
+    overflow-y: auto;
+    border: 1px solid #9d9ea5;
+    border-top: none;
+    margin-bottom: 20px;
+}
+
+/* 실질적으로 글 작성되는 영역 */
+.ql-editor {
+    padding: 16px;
+    font-size: 16px;                
+    line-height: 1.7;
+    background: var(-root_bg_color);         
+}
+
+/* 에디터 안에 들어갈 텍스트 스타일 */
+.ql-editor p {
+    margin-bottom: 12px;
+}
+
+/* 에디터 안에 링크 색상 */
+.ql-editor a {
+    color: #fc4771; 
+    text-decoration: underline;
+}
+
+
+.ql-editor strong {
+    font-weight: var(--font_medium);
+}
+
+/* 툴바 커스터마이징 */
+.ql-toolbar {
+    background-color: var(--primary_color);
+    border-bottom: none;
+    border: none !important;
+}
+
+/* 툴바 버튼 hover 효과 */
+.ql-toolbar button:hover {
+    background-color: #ff92ae;
+    color: var(--sub_text_color);
+}
+
+
+/* 툴바 버튼 hover 시 색상 변경 */
+.ql-toolbar button:hover,
+.ql-toolbar .ql-picker-label:hover {
+background-color: #ff92ae;
+transition: 0.3s;
+}
+
+/* 1. normal text 버튼 클릭 시 보이는 테두리 */
+.ql-toolbar .ql-picker.ql-header.ql-expanded .ql-picker-label {
+    border: 1px solid var(--root_bg_color) !important;
+}
+
+/* 2. 드롭다운 목록 박스 테두리 */
+.ql-toolbar .ql-picker.ql-header.ql-expanded .ql-picker-options {
+    border: none !important;
+}
+
+/* 드롭다운 목록 항목 hover 시 색상 변경 */
+.ql-toolbar .ql-picker-options .ql-picker-item:hover {
+    color: var(--primary_color);
+    cursor: pointer;
+}
+
+.ql-toolbar button:hover svg {
+    fill: #ff5c8a !important;
+}
+
+/* 이미지 넣을 경우 반응형 */
+.ql-editor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* 툴바 아이콘 이미지관련 커스텀*/
+
+.ql-toolbar.ql-snow svg line,
+.ql-toolbar.ql-snow svg rect,
+.ql-toolbar.ql-snow svg polyline,
+.ql-toolbar.ql-snow svg polygon,
+.ql-toolbar.ql-snow svg circle {
+    stroke: var(--sub_text_color) !important;
+    fill: var(--primary_color) !important; 
+}
+
+.ql-toolbar.ql-snow svg path {
+    stroke: var(--sub_text_color) !important;
+}
+
+.ql-toolbar.ql-snow .ql-fill {
+    fill: var(--sub_text_color) !important;
+    stroke: none !important;
+}
+
+.ql-toolbar .ql-picker-label {
+    color: var(--sub_text_color) !important;
+}

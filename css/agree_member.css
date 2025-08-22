@@ -1,0 +1,211 @@
+
+body {
+    background: url(/images/join_member/login_bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.agree_wrap {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+form {
+    max-width: 640px;
+    background: var(--root_bg_color);
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--img_box_box-shadow);
+    text-align: center;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    color: var(--secondary_color);
+    font-size: 30px;
+    font-weight: var(--font_extra_bold);
+    padding: 30px 0 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.txt_line {
+    position: absolute;
+    display: block;
+    background: var(--primary_color);
+    width: 100%;
+    height: 14px;
+    opacity: 0.55;
+    margin-top: -16px;
+    z-index: -1;
+}
+
+fieldset {
+    width: 100%;
+    padding: 20px 30px 20px;
+    background: #fff5fa;
+    border: none;
+    border-radius: 0 0 10px 10px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.agree_ca {
+    margin: 0 auto 20px;
+    padding: 20px;
+}
+
+.agree_ca img {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 6px;
+    opacity: 0.8;
+}
+
+.agee_info_txt {
+    text-align: center;
+    opacity: 0.8;
+    color: var(--sub_text_color);
+    font-size: 14px;
+    font-weight: var(--font_medium);
+    background: #ee6f8c;
+    padding: 8px 14px;
+    border-radius: 20px;
+    line-height: 14px;
+}
+
+.agree_box4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.agree_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    border-top: 1px solid var(--primary_color);
+    padding-top: 22px;
+}
+
+.agree_label {
+    padding: 2px 0;
+    background: #ffdfe7;
+}
+
+.agree_box2, .agree_box3{
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.agree_label, .agree_label4 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.agree_label2, .agree_label3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.agree_txt {
+    font-size: 15px;
+    font-weight: var(--font_semi_bold);
+}
+
+.agree_txt2 {
+    font-size: 15px;
+    font-weight: var(--font_semi_bold);
+    color: var(--primary_color);
+}
+
+.agree_check {
+    display: none;
+    width: 18px;
+    height: 18px;
+}
+
+.check_custom {
+    display: inline-block;
+    background: var(--root_bg_color);
+    border-radius: 4px;
+    border: 1px solid #5c5f77;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+
+.agree_check:checked + .check_custom::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: url(/images/join_member/check_custom.svg);
+    width: 18px;
+    height: 18px;
+}
+
+.u_agree, .u_agree_info {
+    background: var(--root_bg_color);
+    border: 1px solid #5c5f77;
+    border-radius: 4px;
+    max-width: 786px;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    direction: ltr;         /* 왼쪽에서 오른쪽으로 읽는 방향 설정 */
+    padding: 10px;     /* 안쪽 왼쪽 여백 (가독성 좋게) */
+    font-size: 12px;
+    font-weight: var(--font_medium);
+    line-height: 1.1;
+}
+
+textarea:focus {
+    border: 2px solid var(--primary_color);
+    outline: none;
+}
+
+.button_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cancle_button {
+    background: var(--secondary_color);
+    width: 100%;
+    color: var(--sub_text_color);
+    height: 48px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: var(--font_medium);
+    display: flex;
+    justify-content: center;
+    line-height: 48px;
+}
+
+.join_button {
+    background: var(--primary_color);
+    width: 100%;
+    color: var(--root_bg_color);
+    height: 48px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: var(--font_medium);
+    display: flex;
+    justify-content: center;
+    line-height: 48px;
+}
+
+/* -----------------------------------기타 컨텐츠 끝부분---------------------------------------------------------------- */
+

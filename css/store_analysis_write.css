@@ -1,0 +1,246 @@
+
+.jn_main_img_box {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto 56px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 9999;
+    left: 9999px;
+    transform: translateX(-9999px);
+    visibility: hidden
+}
+
+
+.jn_main_img {
+    object-fit: cover;
+}
+
+.jn_img_text {
+    width: auto;
+    height: auto;
+    color: var(--sub_text_color);
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.jn_text1 {
+    font-size: 28px;
+    font-weight: var(--font_extra_bold);
+    line-height: 1.0;
+    margin-bottom: 40px;
+}
+.jn_text2 {
+    font-size: 36px;
+    font-weight: var(--font_semi_bold);
+    line-height: 1.0;
+}
+.jn_text3 {
+    font-size: 36px;
+    font-weight: var(--font_semi_bold);
+    margin-bottom: 40px;
+}
+.jn_text3 span {
+    font-size: 36px;
+    font-weight: var(--font_extra_bold);
+}
+
+.jn_text4 {
+    font-size: 36px;
+    font-weight: var(--font_extra_bold);
+    margin-bottom: 20px;
+}
+.jn_text5 {
+    font-size: 14px;
+    font-weight: var(--font_medium);
+    margin-bottom: 35px;
+    line-height: 1.1;
+}
+
+/*--------------main 이미지 끝부분---------------- */
+
+body {
+    background: url(/images/join_member/login_bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.write_board_wrap {
+    margin: 20px auto;
+    width: 768px;
+    border: none;
+    background: none;
+}
+
+.store_title {
+    color: var(--secondary_color);
+    font-size: 30px;
+    font-weight: var(--font_extra_bold);
+    padding: 30px 20px 40px ;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+}
+
+.profile_wrap {
+    margin: 0 auto 20px;
+    padding: 20px 14px;
+    background: var(--root_bg_color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.profile_box {
+    position: relative;
+    width: 80px;
+}
+
+.profile_thumbnail {
+    display: block;
+    box-shadow: var(--img_box_box-shadow);
+    border-radius: 50%;
+    width: 80px;
+    height: auto;
+}
+
+.profile_btn_box {
+    background: #fafcff;
+    margin: 0 auto;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--img_box_box-shadow);
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+}
+
+.profile_btn img {
+    display: block;
+    width: 24px;
+    height: auto;
+    padding: 3px;
+    opacity: 0.8;
+}
+
+.profile_user_name {
+    width: 140px;
+    margin-top: 12px;
+    padding: 6px;
+    display: block;
+    font-size: 14px;
+    font-weight: var(--font_extra_bold);
+    text-align: center;
+    border-radius: 20px;
+    background: #f6f6f6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.write_board_box {
+    flex: 1;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 30px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+#wish_title {
+    background: var(--root_bg_color);
+    border: 1px solid #9d9ea5;
+    border-radius: 4px;
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: var(--font_medium);
+    margin: 0 auto 14px;
+}
+
+#wish_title:focus {
+    border: 3px solid var(--primary_color);
+    outline: none;
+}
+
+#post_title {
+    background: var(--root_bg_color);
+    border: 1px solid #9d9ea5;
+    border-radius: 4px;
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: var(--font_medium);
+    margin: 0 auto 14px;
+}
+
+#post_title:focus {
+    border: 3px solid var(--primary_color);
+    outline: none;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--primary_color);
+    border-radius: 50%;
+}
+
+.btn_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.cancle_btn {
+    background: var(--secondary_color);
+    width: 100%;
+    color: var(--sub_text_color);
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: var(--font_medium);
+    display: flex;
+    justify-content: center;
+    line-height: 42px;
+}
+
+.completed_btn {
+    background: var(--primary_color);
+    width: 100%;
+    color: var(--root_bg_color);
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: var(--font_medium);
+    display: flex;
+    justify-content: center;
+    line-height: 42px;
+}

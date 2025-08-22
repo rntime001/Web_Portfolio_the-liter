@@ -1,0 +1,69 @@
+:root {
+    --primary_color: #ee6f8c;
+    --secondary_color: #333F4F;
+    --point_color: #e40616;
+    --root_bg_color: #fff;
+    --contents_style_bg_color_01: #fff9fa;
+    --contents_style_bg_color_02: #fff4f6;
+    --main_text_color: #292929;
+    --sub_text_color: #fff;
+    --border_root_color: #929aa4;
+    --font_extra_bold: 700;
+    --font_semi_bold: 600;
+    --font_medium: 500;
+    --font_light: 300;
+    --img_box_box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    --mini_button_box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    --mini_card_box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* ----------------------------------변수------------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--main_text_color);
+    background-color: var(--root_bg_color);
+    scroll-behavior: smooth;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+address, a {
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden
+}
+/* ----------------------------------css초기화------------------------------------------------ */
