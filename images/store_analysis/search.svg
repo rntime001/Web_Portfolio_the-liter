@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.96 17.96">
+  <!-- Generator: Adobe Illustrator 29.5.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 137)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #929aa4;
+      }
+
+      .st1 {
+        opacity: .25;
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #929aa4;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .st2, .st3 {
+        display: none;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1" data-name="레이어_1" class="st3">
+    <image class="st1" width="21" height="21" transform="translate(-32.02 -5.87) rotate(45)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGzSURBVHgB1ZRLUsJAEIa7J9F1jpAj4AmEG+jOZxk2IKVVwAnkBgGqKKxsImp0aXkCuIF4g3iDbIHMxJ4QUhDzUHHjX5VkkvzzTWe6OwD/RVhkGFhOSaDQWMC8q9rpFL6hVKhp2xqbqy1EbNKtFr8I0A1AjJr18w78BGoOn3VFEWMi6CEH0KWzPHQEjJ7BVHDlsN04dtOgahaQJk5QqK3m5dH76n3fetoPgN8RvMQUbtOjSmGkfcshY2BIYLN2ljrBHNo6U9SxjJr22biun4ySHrZ5GxzIs+CLKmSo3ai6DFhXjjkKI80TQ03KMl00uV9yIuTI35mH0dFnlnKhKpVNNPSgQO1qdeXRcqG+r7rL1ZdZz5NMaF4AMTQqDzKhbg4fypAjxnwjHAQ4yYWGUSKGCVAYs9ei2Yxy4JTIdxNN6KZ5vhR/z3p8CxNA3cMAO4vd2avcwyGV0pypxlqXeZwre2kNkNJRsg53XrIyK0UV4qEE08JcsEoSnPlDMa17g+rxggzlGCT3kD6Z89nHqgHSwIV/qcxF1zorCf41NA+8FTQLvDU0CQ4EtuCvJMG9W0eWG3wCfeG+L+tWPfYAAAAASUVORK5CYII="/>
+  </g>
+  <g id="_레이어_2" data-name="레이어_2">
+    <g class="st3">
+      <path class="st0" d="M-9.29-4.41C-6.73-4.41-4.65-2.33-4.65.23s-2.08,4.64-4.64,4.64S-13.93,2.79-13.93.23s2.08-4.64,4.64-4.64M-9.29-6.41c-3.67,0-6.64,2.97-6.64,6.64s2.97,6.64,6.64,6.64S-2.65,3.9-2.65.23s-2.97-6.64-6.64-6.64h0Z"/>
+    </g>
+    <line class="st2" x1="-9.29" y1="4.93" x2="-9.29" y2="14.17"/>
+    <path class="st0" d="M17.96,16.55l-5.97-5.97c1.91-2.6,1.7-6.27-.65-8.62C8.75-.64,4.54-.64,1.95,1.95-.64,4.54-.64,8.75,1.95,11.34c2.35,2.35,6.03,2.56,8.62.65l5.97,5.97,1.41-1.41ZM3.36,9.93c-1.81-1.81-1.81-4.75,0-6.56,1.81-1.81,4.75-1.81,6.56,0,1.81,1.81,1.81,4.75,0,6.56s-4.75,1.81-6.56,0Z"/>
+  </g>
+</svg>
