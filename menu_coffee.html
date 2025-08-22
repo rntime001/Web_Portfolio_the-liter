@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더 리터 커피</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="/css/variable_reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/menu_coffee.css">
+    <script src="/js/menu.js"></script>
+    <script src="/js/fade_in.js"></script>
+</head>
+<body>
+
+    <header id="header_wrap">
+        <div class="header_root_box">
+            <div id="aside"></div>
+            <div class="header_bg">
+                <!-- 좌측 로고 -->
+                <div class="logo_box">
+                    <h1 class="blind">더리터 커피</h1>
+                    <a href="index.html" class="logo_main">
+                        <img src="/images/common/title_logo.svg" alt="더 리터 커피">
+                    </a>
+                </div>
+                <!-- 가운데 내비게이션 -->
+                <nav class="navi_box">
+                    <ul class="menu-item">
+                        <li class="main_na_font_h"><a href="index.html" class="main_na_font">THE LITER</a></li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="history.html" class="main_na_font">BRAND</a>
+                            <ul>
+                                <li class="na_child"><a href="history.html">브랜드소개</a></li>
+                                <li class="na_child"><a href="history.html">연혁</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="menu_new.html" class="main_na_font">MENU</a>
+                            <ul>
+                                <li class="na_child"><a href="menu_new.html">신메뉴</a></li>
+                                <li class="na_child"><a href="menu_coffee.html">커피</a></li>
+                                <li class="na_child"><a href="menu_drink.html">음료</a></li>
+                                <li class="na_child"><a href="menu_dessert.html">디저트</a></li>
+                                <li class="na_child"><a href="menu_md.html">MD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="join_franchise.html" class="main_na_font">HOW TO</a>
+                            <ul>
+                                <li class="na_child"><a href="join_franchise.html">가맹문의</a></li>
+                                <li class="na_child"><a href="store_analysis.html">상권분석</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="store.html" class="main_na_font">STORE</a>
+                            <ul>
+                                <li class="na_child"><a href="store.html">국내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="ivent.html" class="main_na_font">COMMUNITY</a>
+                            <ul>
+                                <li class="na_child"><a href="ivent.html">진행중인 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 우측 유틸 -->
+                <div class="utill_box">
+                    <a href="join_franchise.html" class="header_join">가맹문의</a>
+                    <div class="lang_box">
+                        <a href="#none" class="lang_img"><img src="/images/common/lang.svg" alt="언어 선택"></a>
+                        <a href="#none" class="kr">KR</a>
+                        <div class="line_lang"></div>
+                        <a href="#none" class="en">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="mains">
+
+        <div class="menu_main_img_box">
+            <img class="menu_main_img  fade-left-seed" src="/images/menu/menu_main_img_box.jpg" alt="메뉴 메인 이미지">
+            <div class="main_img_text">
+                <h2 class="menu_title fade-left-seed">MENU</h2>
+                <p class="m_i_text1 fade-left-seed">더 크고 더 맛있는 더리터 커피의 더 다양한 메뉴들을 만나보세요!</p>
+                <p class="m_i_text2 fade-left-seed">MORE BIGGER, MORE TASTIER</p>
+                <p class="m_i_text3 fade-right-seed">
+                    THE LITER's strength is 'cost-effectiveness'. We provide better quality products at a low price,
+                    and there are various types, so anyone of all ages can enjoy it together. We deliver happiness
+                    to you with more quantity, types, and amazing cost-effectiveness
+                </p>
+            </div>
+        </div>
+
+        <div class="menu_root_box">
+            <h2 class="blind">메뉴목록</h2>
+            <div class="menu_box_wrap">
+                <ul class="menu_box">
+                    <li><a href="menu_new.html" class="menu_new">신메뉴</a></li>
+                    <li><a href="menu_coffee.html" class="menu_coffee">커피</a></li>
+                    <li><a href="menu_drink.html" class="menu_drink">음료</a></li>
+                    <li><a href="menu_dessert.html" class="menu_de">디저트</a></li>
+                    <li><a href="menu_md.html" class="menu_md">MD</a></li>
+                </ul>
+            </div>
+            <div class="menu_f_root_box">
+                <img class="menu_icon_coffee" src="/images/menu/menu_icon_coffee.png" alt="메뉴찾기 아이콘">
+                <div class="menu_f_child_box">
+                    <h3 class="menu_f_title">메뉴찾기</h3>
+                    <div class="line_m"></div>
+                    <ul class="check_s_box">
+                        <li>
+                            <label for="check_all" class="check_1">
+                                <input type="checkbox" id="check_all" class="check_box_m">
+                                <span class="check_custom"></span>
+                                <span>전체</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="check_2" class="check_2">
+                                <input type="checkbox" id="check_2" class="check_box_m">
+                                <span class="check_custom"></span>
+                                <span>밀크베이스</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check_3" class="check_3">
+                                <input type="checkbox" id="check_3" class="check_box_m">
+                                <span class="check_custom"></span>
+                                <span>기라델리</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check_4" class="check_4">
+                                <input type="checkbox" id="check_4" class="check_box_m">
+                                <span class="check_custom"></span>
+                                <span>프라페</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check_5" class="check_5">
+                                <input type="checkbox" id="check_5" class="check_box_m">
+                                <span class="check_custom"></span>
+                                <span>라떼</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check_6" class="check_6">
+                                <input type="checkbox" id="check_6" class="check_box_m">
+                                <span class="check_custom"></span>
+                                <span>콜드브루</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu_li_root_box">
+                <h2 class="blind">menu_list</h2>
+                <ul class="main_coffee_box">
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/muan-latte_milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>무안 군고구마 라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/pista-milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>피스타치오 초코라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/choco-milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>초코 라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/purple-milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>자색고구마 라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/mint-milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>민트초코 라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/malcha-milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>말차라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="밀크베이스 라떼"><img src="/images/menu/coffee/cuandcu-milk_latte.jpg" alt="">
+                        <span><span class="dot"></span>쿠앤크 라떼</span>
+                    </li>
+
+                    <li class="gira" data-tags="기라델리"><img src="/images/menu/coffee/real-choco_gira.jpg" alt="">
+                        <span><span class="dot"></span>리얼 초코 블렌디드</span>
+                    </li>
+
+                    <li class="gira" data-tags="기라델리"><img src="/images/menu/coffee/sina_gira.jpg" alt="">
+                        <span><span class="dot"></span>시나몬 진저 블렌디드</span>
+                    </li>
+
+                    <li class="gira" data-tags="기라델리"><img src="/images/menu/coffee/sea_gira.jpg" alt="">
+                        <span><span class="dot"></span>씨솔트 카라멜 블렌디드</span>
+                    </li>
+
+                    <li class="gira" data-tags="기라델리"><img src="/images/menu/coffee/sweet_gira.jpg" alt="">
+                        <span><span class="dot"></span>기라델리 스위트 바닐라</span>
+                    </li>
+
+                    <li class="gira" data-tags="기라델리"><img src="/images/menu/coffee/classic_gira.jpg" alt="">
+                        <span><span class="dot"></span>기라델리 클래식 초코</span>
+                    </li>
+
+                    <li class="" data-tags="프라페"><img src="/images/menu/coffee/coco_frappe.jpg" alt="">
+                        <span><span class="dot"></span>코코넛 커피</span>
+                    </li>
+
+                    <li class="frappe" data-tags="프라페"><img src="/images/menu/coffee/dublejava_frappe.jpg" alt="">
+                        <span><span class="dot"></span>더블자바칩 프라페</span>
+                    </li>
+
+                    <li class="frappe" data-tags="프라페"><img src="/images/menu/coffee/milk_frappe.jpg" alt="">
+                        <span><span class="dot"></span>밀크 프라페</span>
+                    </li>
+
+                    <li class="frappe" data-tags="프라페"><img src="/images/menu/coffee/mint-choco_frappe.jpg" alt="">
+                        <span><span class="dot"></span>민트초코 프라페</span>
+                    </li>
+
+                    <li class="frappe" data-tags="프라페"><img src="/images/menu/coffee/piata_frappe.jpg" alt="">
+                        <span><span class="dot"></span>피스타치오 프라페</span>
+                    </li>
+
+                    <li class="frappe" data-tags="프라페"><img src="/images/menu/coffee/vanil_frappe.jpg" alt="">
+                        <span><span class="dot"></span>바닐라빈 프라페</span>
+                    </li>
+
+                    <li class="coldb_i" data-tags="콜드브루"><img src="/images/menu/coffee/coldb_i.jpg" alt="">
+                        <span><span class="dot"></span>콜드브루 아인슈페너</span>
+                    </li>
+
+                    <li class="d_coldb_i" data-tags="콜드브루"><img src="/images/menu/coffee/coldb_i.jpg" alt="">
+                        <span><span class="dot"></span>디카페인 콜드브루아인슈페너</span>
+                    </li>
+
+                    <li class="d_coldb_i" data-tags="콜드브루"><img src="/images/menu/coffee/d_coldb_dol.jpg" alt="">
+                        <span><span class="dot"></span>디카페인 돌체콜드브루</span>
+                    </li>
+
+                    <li class="d_coldb_i" data-tags="콜드브루 라떼"><img src="/images/menu/coffee/d_coldb_dol.jpg" alt="">
+                        <span><span class="dot"></span>디카페인 콜드브루라떼</span>
+                    </li>
+
+                    <li class="d_coldb_i" data-tags="콜드브루"><img src="/images/menu/coffee/d_coldb.jpg" alt="">
+                        <span><span class="dot"></span>디카페인 콜드브루</span>
+                    </li>
+
+                    <li class="dol_coldb_i" data-tags="콜드브루"><img src="/images/menu/coffee/dol_coldb.jpg" alt="">
+                        <span><span class="dot"></span>돌체콜드브루</span>
+                    </li>
+
+                    <li class="coldb_latt" data-tags="콜드브루 라떼"><img src="/images/menu/coffee/dol_coldb.jpg" alt="">
+                        <span><span class="dot"></span>콜드브루라떼</span>
+                    </li>
+
+                    <li class="coldb" data-tags="콜드브루"><img src="/images/menu/coffee/d_coldb.jpg" alt="">
+                        <span><span class="dot"></span>콜드브루</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/sig_balatt.jpg" alt="">
+                        <span><span class="dot"></span>시그니처 바닐라빈라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/cocolatt.jpg" alt="">
+                        <span><span class="dot"></span>코코넛라떼</span>
+                    </li>    
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/dol_latt.jpg" alt="">
+                        <span><span class="dot"></span>돌체라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/cafemo.jpg" alt="">
+                        <span><span class="dot"></span>카페모카</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/carama.jpg" alt="">
+                        <span><span class="dot"></span>카라멜마끼아또</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/heylatt.jpg" alt="">
+                        <span><span class="dot"></span>헤이즐넛라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/heylatt.jpg" alt="">
+                        <span><span class="dot"></span>바닐라라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/capu.jpg" alt="">
+                        <span><span class="dot"></span>카푸치노</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/cafelatt.jpg" alt="">
+                        <span><span class="dot"></span>카페라떼</span>
+                    </li>
+
+                    <li class="latte" data-tags="라떼"><img src="/images/menu/coffee/retro_ca.jpg" alt="">
+                        <span><span class="dot"></span>레트로커피</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div id="sns">
+            <h2 class="blind">더리터 커피 sns 목록</h2>
+            <a href="https://blog.naver.com/theliter" target="_blank" class="sns"><img src="/images/common/naver_b.png" alt="naverblog"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.instagram.com/theliter_official" target="_blank" class="sns"><img src="/images/common/instar.png" alt="instargram"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.facebook.com/theliter" target="_blank" class="sns"><img src="/images/common/facebook.png" alt="facebook"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.youtube.com/@theliter6266" target="_blank" class="sns"><img src="/images/common/youtube.png" alt="youtube"></a>
+        </div>
+        <div class="top_btn">
+            <a href="#" class="to_top">
+                <img src="/images/common/top_che.svg" alt="" class="top_che">
+                <span class="to_top">TOP</span>
+            </a>
+        </div>
+    </aside>
+
+    <footer id="footer_bg">
+        <div class="footer_box">
+            <h2 class="blind">사이트이용안내</h2>
+            <div class="footer_logo"><img src="/images/common/footer_logo_typo.png" alt="더리터 커피"></div>
+            <div class="sitemap_box">
+                <div class="brand">
+                    <h3 class="sitemap_txt1">BRAND</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="history.html">브랜드소개</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="sitemap_txt1">MENU</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="menu_new.html">신메뉴</a></li>
+                        <li><a href="menu_coffee.html">커피</a></li>
+                        <li><a href="menu_drink.html">음료</a></li>
+                        <li><a href="menu_dessert.html">디저트</a></li>
+                        <li><a href="menu_md.html">MD</a></li>
+                    </ul>
+                </div>
+
+                <div class="howto">
+                    <h3 class="sitemap_txt1">HOW TO</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="join_franchise.html">가맹문의</a></li>
+                        <li><a href="store_analysis.html">상권분석</a></li>
+                    </ul>
+                </div>
+
+                <div class="store">
+                    <h3 class="sitemap_txt1">STORE</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="store.html">국내</a></li>
+                    </ul>
+                </div>
+
+                <div class="community">
+                    <h3 class="sitemap_txt1">COMMUNITY</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="ivent.html">진행중인 이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="c_info_box">
+                <div class="c_info_box_child">
+                    <h3 class="info_title">INFORMATION</h3>
+                    <div class="address_box">
+                        <address class="etc_info">본사 서울특별시 강남구 논현로152길 21, 디오빌딩 5층 주식회사</address>
+                        <p class="etc_info_c">더 리터 대표 : 김나미</p>
+                    </div>
+                    <div class=tel_box>
+                        <p class="etc_info">TEL : 1670-7762</p>
+                        <p class="etc_info">FAX : 051-980-240</p>
+                        <p class="etc_info_e">E-mail : theliter@the-liter.com</p>
+                    </div>
+                    <div class="c_num">
+                        <p class="etc_info">사업자번호 : 666-87-00214</p>
+                        <p class="etc_info_n">통신판매신고번호 : 제 2018-부산금정-0041호</p>
+                    </div>
+                    <p class="copy">&copy; 2022. THELITER. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더 리터 커피</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="/css/variable_reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/store.css">
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7d22d7bb4fe9af60adfefc00283bad9d&autoload=false"></script>
+    <script src="/js/map.js" defer></script>
+    <script src="/js/store.js"></script>
+
+</head>
+<body>
+
+    <header id="header_wrap">
+        <div class="header_root_box">
+            <div id="aside"></div>
+            <div class="header_bg">
+                <!-- 좌측 로고 -->
+                <div class="logo_box">
+                    <h1 class="blind">더리터 커피</h1>
+                    <a href="index.html" class="logo_main">
+                        <img src="/images/common/title_logo.svg" alt="더 리터 커피">
+                    </a>
+                </div>
+                <!-- 가운데 내비게이션 -->
+                <nav class="navi_box">
+                    <ul class="menu-item">
+                        <li class="main_na_font_h"><a href="index.html" class="main_na_font">THE LITER</a></li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="history.html" class="main_na_font">BRAND</a>
+                            <ul>
+                                <li class="na_child"><a href="history.html">브랜드소개</a></li>
+                                <li class="na_child"><a href="history.html">연혁</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="menu_new.html" class="main_na_font">MENU</a>
+                            <ul>
+                                <li class="na_child"><a href="menu_new.html">신메뉴</a></li>
+                                <li class="na_child"><a href="menu_coffee.html">커피</a></li>
+                                <li class="na_child"><a href="menu_drink.html">음료</a></li>
+                                <li class="na_child"><a href="menu_dessert.html">디저트</a></li>
+                                <li class="na_child"><a href="menu_md.html">MD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="join_franchise.html" class="main_na_font">HOW TO</a>
+                            <ul>
+                                <li class="na_child"><a href="join_franchise.html">가맹문의</a></li>
+                                <li class="na_child"><a href="store_analysis.html">상권분석</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="store.html" class="main_na_font">STORE</a>
+                            <ul>
+                                <li class="na_child"><a href="store.html">국내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="ivent.html" class="main_na_font">COMMUNITY</a>
+                            <ul>
+                                <li class="na_child"><a href="ivent.html">진행중인 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 우측 유틸 -->
+                <div class="utill_box">
+                    <a href="join_franchise.html" class="header_join">가맹문의</a>
+                    <div class="lang_box">
+                        <a href="#none" class="lang_img"><img src="/images/common/lang.svg" alt="언어 선택"></a>
+                        <a href="#none" class="kr">KR</a>
+                        <div class="line_lang"></div>
+                        <a href="#none" class="en">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main" class="mains">
+
+        <div class="store_nav_warp">
+            <h2 class="blind">더리터커피 매장 지도</h2>
+
+            <div id="map">
+
+                <section class="store_info_box_wrap">
+                    <ul class="store_info_box">
+                        <li class="store_info_search_box">
+                            <h2>매장안내
+                                <span class="title_new_count" aria-label="현재 매장수 9개" >(9)</span>
+                            </h2>
+                            <form action="store.html" method="get" name="s_area_search" id="s_area_search_box">
+                                <fieldset>
+                                    <legend class="blind">매장 찾기</legend>
+                                    <label for="s_area_search">
+                                        <input type="text" name="s_area_search" id="s_area_search" placeholder="Search"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Search'">
+                                    </label>
+                                    <button type="button" class="search_btn">
+                                        <img src="/images/store/search.svg" alt="상권분석 검색 버튼">
+                                    </button>
+                                </fieldset>
+                            </form>
+                        </li>
+                    </ul>
+                    <div class="select_box_wrap">
+                        <div class="select_box1">
+                            <div class="left_line">
+                                <ul>
+                                    <li><a href="#none" class="toggle_btn">등록순</a></li>
+                                    <li class="select_list1">
+                                        <p class="r_order"><a href="#none">등록순</a></p>
+                                        <p class="b_distance"><a href="#none">거리순</a></p>
+                                        <p class="b_name"><a href="#none">이름순</a></p>
+                                        <p class="b_update"><a href="#none">업데이트순</a></p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="toggle_btn">
+                                    <img class="arrow" src="/images/store/drop_arrow.svg" alt="목록 화살표">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="select_box2">
+                            <div class="right_line">
+                                <ul>
+                                    <li><a href="#none" class="toggle_btn2">전체</a></li>
+                                    <li class="select_list2">
+                                        <p class="store_all"><a href="#none">전체</a></p>
+                                        <p class="t_liter"><a href="#none">더리터</a></p>
+                                        <p class="t_liter24"><a href="#none">더리터24</a></p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="toggle_btn2">
+                                    <img class="arrow" src="/images/store/drop_arrow.svg" alt="목록 화살표">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_list_root_box_wrap">
+                        <ul class="store_list_root_box">
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 수원중북점</a></p>
+                                <p class="medium">경기도 수원시 장안구 광교산로 38</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 잠실삼전점</a></p>
+                                <p class="medium">서울특별시 송파구 올림픽로12길 45 삼성빌라트</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 대치점</a></p>
+                                <p class="medium">서서울특별시 강남구 삼성로69길 25</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 군산센트럴파크점</a></p>
+                                <p class="medium">전북특별자치도 군산시 번영로 190 센트럴파크 아파트</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 운정해오름마을점</a></p>
+                                <p class="medium">경기도 파주시 운정중앙로 246 운정자이 퍼스트시티</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 성균관대점</a></p>
+                                <p class="medium">경기도 수원시 장안구 일월로82번길 19-9</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 서초서일초점</a></p>
+                                <p class="medium">서울특별시 서초구 남부순환로339길 53</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 방이역점</a></p>
+                                <p class="medium">서울특별시 송파구 위례성대로20길 26</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 직영종로점</a></p>
+                                <p class="medium">서울특별시 종로구 삼일대로 391</p>
+                            </li>
+                            <li class="store_list_box">
+                                <p class="c_red"><a href="#none">더리터</a></p>
+                                <p class="c_bold"><a href="#none">더리터 부여홍산점</a></p>
+                                <p class="medium">충청남도 부여군 홍산면 홍산로 46</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>   
+        </div>
+    </main>
+
+    <aside>
+        <div id="sns">
+            <h2 class="blind">더리터 커피 sns 목록</h2>
+            <a href="https://blog.naver.com/theliter" target="_blank" class="sns"><img src="/images/common/naver_b.png" alt="naverblog"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.instagram.com/theliter_official" target="_blank" class="sns"><img src="/images/common/instar.png" alt="instargram"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.facebook.com/theliter" target="_blank" class="sns"><img src="/images/common/facebook.png" alt="facebook"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.youtube.com/@theliter6266" target="_blank" class="sns"><img src="/images/common/youtube.png" alt="youtube"></a>
+        </div>
+        <div class="top_btn">
+            <a href="#" class="to_top">
+                <img src="/images/common/top_che.svg" alt="" class="top_che">
+                <span class="to_top">TOP</span>
+            </a>
+        </div>
+    </aside>
+
+    <footer id="footer_bg">
+        <div class="footer_box">
+            <h2 class="blind">사이트이용안내</h2>
+            <div class="footer_logo"><img src="/images/common/footer_logo_typo.png" alt="더리터 커피"></div>
+            <div class="sitemap_box">
+                <div class="brand">
+                    <h3 class="sitemap_txt1">BRAND</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="history.html">브랜드소개</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="sitemap_txt1">MENU</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="menu_new.html">신메뉴</a></li>
+                        <li><a href="menu_coffee.html">커피</a></li>
+                        <li><a href="menu_drink.html">음료</a></li>
+                        <li><a href="menu_dessert.html">디저트</a></li>
+                        <li><a href="menu_md.html">MD</a></li>
+                    </ul>
+                </div>
+
+                <div class="howto">
+                    <h3 class="sitemap_txt1">HOW TO</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="join_franchise.html">가맹문의</a></li>
+                        <li><a href="store_analysis.html">상권분석</a></li>
+                    </ul>
+                </div>
+
+                <div class="store">
+                    <h3 class="sitemap_txt1">STORE</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="store.html">국내</a></li>
+                    </ul>
+                </div>
+
+                <div class="community">
+                    <h3 class="sitemap_txt1">COMMUNITY</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="ivent.html">진행중인 이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="c_info_box">
+                <div class="c_info_box_child">
+                    <h3 class="info_title">INFORMATION</h3>
+                    <div class="address_box">
+                        <address class="etc_info">본사 서울특별시 강남구 논현로152길 21, 디오빌딩 5층 주식회사</address>
+                        <p class="etc_info_c">더 리터 대표 : 김나미</p>
+                    </div>
+                    <div class=tel_box>
+                        <p class="etc_info">TEL : 1670-7762</p>
+                        <p class="etc_info">FAX : 051-980-240</p>
+                        <p class="etc_info_e">E-mail : theliter@the-liter.com</p>
+                    </div>
+                    <div class="c_num">
+                        <p class="etc_info">사업자번호 : 666-87-00214</p>
+                        <p class="etc_info_n">통신판매신고번호 : 제 2018-부산금정-0041호</p>
+                    </div>
+                    <p class="copy">&copy; 2022. THELITER. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

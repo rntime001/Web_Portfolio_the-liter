@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더 리터 커피</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="/css/variable_reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/store_analysis.css">
+    <script src="/js/store_analysis.js"></script>
+    <script src="/js/fade_in.js"></script>
+</head>
+<body>
+
+    <header id="header_wrap">
+        <div class="header_root_box">
+            <div id="aside"></div>
+            <div class="header_bg">
+                <!-- 좌측 로고 -->
+                <div class="logo_box">
+                    <h1 class="blind">더리터 커피</h1>
+                    <a href="index.html" class="logo_main">
+                        <img src="/images/common/title_logo.svg" alt="더 리터 커피">
+                    </a>
+                </div>
+                <!-- 가운데 내비게이션 -->
+                <nav class="navi_box">
+                    <ul class="menu-item">
+                        <li class="main_na_font_h"><a href="index.html" class="main_na_font">THE LITER</a></li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="history.html" class="main_na_font">BRAND</a>
+                            <ul>
+                                <li class="na_child"><a href="history.html">브랜드소개</a></li>
+                                <li class="na_child"><a href="history.html">연혁</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="menu_new.html" class="main_na_font">MENU</a>
+                            <ul>
+                                <li class="na_child"><a href="menu_new.html">신메뉴</a></li>
+                                <li class="na_child"><a href="menu_coffee.html">커피</a></li>
+                                <li class="na_child"><a href="menu_drink.html">음료</a></li>
+                                <li class="na_child"><a href="menu_dessert.html">디저트</a></li>
+                                <li class="na_child"><a href="menu_md.html">MD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="join_franchise.html" class="main_na_font">HOW TO</a>
+                            <ul>
+                                <li class="na_child"><a href="join_franchise.html">가맹문의</a></li>
+                                <li class="na_child"><a href="store_analysis.html">상권분석</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="store.html" class="main_na_font">STORE</a>
+                            <ul>
+                                <li class="na_child"><a href="store.html">국내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="ivent.html" class="main_na_font">COMMUNITY</a>
+                            <ul>
+                                <li class="na_child"><a href="ivent.html">진행중인 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 우측 유틸 -->
+                <div class="utill_box">
+                    <a href="join_franchise.html" class="header_join">가맹문의</a>
+                    <div class="lang_box">
+                        <a href="#none" class="lang_img"><img src="/images/common/lang.svg" alt="언어 선택"></a>
+                        <a href="#none" class="kr">KR</a>
+                        <div class="line_lang"></div>
+                        <a href="#none" class="en">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="mains">
+            
+        <div class="jn_main_img_box">
+            <img class="jn_main_img fade-left-seed" src="/images/join_franchise/join_main.jpg" alt="가맹 메인 이미지">
+            <div class="jn_img_text">
+                <h2 class="blind">가맹 머릿말</h2>
+                <p class="jn_text1 fade-left-seed">FRANCHISE</p>
+                <p class="jn_text2 fade-left-seed">창업 성공의 지름길</p>
+                <p class="jn_text3 fade-left-seed"><span>더리터</span>에 대한 <span>모든 것</span>을 알려드립니다.</p>
+                <p class="jn_text4 fade-right-seed">All about THE LITER</p>
+                <div class="jn_text5 fade-right-seed">
+                    <p>
+                        THE LITER Coffee has more than 600 branches in Korea. Based on more than 10 years of operational experience,
+                    </p>
+                    <p>
+                        we provide you with know-how on starting a business. We want to be a strong guide for those who are struggling
+                    </p>
+                    <p>
+                        to start a business, or those who find it difficult to start a business.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!-- 메인이미지 끝부분 -->
+
+        <section class="board_wrap">
+            <div class="store_ana_search_wrap">
+                <h2>상권분석
+                    <span class="title_new_count" aria-label="새 글 7개" >(7)</span>
+                </h2>
+                <form action="store_analysis" method="get" name="s_ana_search" id="s_ana_search_box">
+                    <fieldset>
+                        <legend class="blind">상권분석 찾기</legend>
+                        <label for="s_search">
+                            <input type="text" name="s_search" id="s_search" placeholder="Search"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='Search'">
+                        </label>
+                        <button type="button" class="search_btn">
+                            <img src="/images/store_analysis/search.svg" alt="상권분석 검색 버튼">
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <ul class="store_ana_board">
+                <li>
+                    <div class="post_summary">
+                        <span class="num"><span class="num_child">NO</span></span>
+                        <span class="title">제목</span>
+                        <span class="views"><span class="views_child">조회수</span></span>
+                    </div>
+                    <ul class="con_list">
+                        <li class="content">
+                            <span class="num"><span class="num_child">7</span></span>
+                            <span class="title_txt">서울특별시 송파구 석촌호수로 284 송리단길에서 입점을 제안드립니다.</span>
+                            <span class="views"><span class="views_child">42</span></span>
+                        </li>
+                        <li class="content">
+                            <span class="num"><span class="num_child">6</span></span>
+                            <span class="title_txt">서울시 은평구 역촌동에 입점 제안드립니다.</span>
+                            <span class="views"><span class="views_child">134</span></span>
+                        </li>
+                        <li class="content">
+                            <span class="num"><span class="num_child">5</span></span>
+                            <span class="title_txt">경남 창원시 진해구 충장로 128-1</span>
+                            <span class="views"><span class="views_child">456</span></span>
+                        </li>
+                        <li class="content">
+                            <span class="num"><span class="num_child">4</span></span>
+                            <span class="title_txt">대구 중구 대봉동</span>
+                            <span class="views"><span class="views_child">527</span></span>
+                        </li>
+                        <li class="content">
+                            <span class="num"><span class="num_child">3</span></span>
+                            <span class="title_txt">부평삼거리역 백운역 더블역세권 입점제안</span>
+                            <span class="views"><span class="views_child">1107</span></span>
+                        </li>
+                        <li class="content">
+                            <span class="num"><span class="num_child">2</span></span>
+                            <span class="title_txt">반송동43-4번지 입점 제안 드립니다.</span>
+                            <span class="views"><span class="views_child">1312</span></span>
+                        </li>
+                        <li class="content">
+                            <span class="num"><span class="num_child">1</span></span>
+                            <span class="title_txt">대구 수성구 상동</span>
+                            <span class="views"><span class="views_child">1892</span></span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="common_write_store_ana.html" class="write_button"><span>글쓰기</span></a>
+                </li>
+            </ul> 
+        </section>
+    </main>            
+
+    <aside>
+        <div id="sns">
+            <h2 class="blind">더리터 커피 sns 목록</h2>
+            <a href="https://blog.naver.com/theliter" target="_blank" class="sns"><img src="/images/common/naver_b.png" alt="naverblog"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.instagram.com/theliter_official" target="_blank" class="sns"><img src="/images/common/instar.png" alt="instargram"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.facebook.com/theliter" target="_blank" class="sns"><img src="/images/common/facebook.png" alt="facebook"></a>
+            <div class="line_sns"></div>
+            <a href="https://www.youtube.com/@theliter6266" target="_blank" class="sns"><img src="/images/common/youtube.png" alt="youtube"></a>
+        </div>
+        <div class="top_btn">
+            <a href="#" class="to_top">
+                <img src="/images/common/top_che.svg" alt="" class="top_che">
+                <span class="to_top">TOP</span>
+            </a>
+        </div>
+    </aside>
+
+    <footer id="footer_bg">
+        <div class="footer_box">
+            <h2 class="blind">사이트이용안내</h2>
+            <div class="footer_logo"><img src="/images/common/footer_logo_typo.png" alt="더리터 커피"></div>
+            <div class="sitemap_box">
+                <div class="brand">
+                    <h3 class="sitemap_txt1">BRAND</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="history.html">브랜드소개</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="sitemap_txt1">MENU</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="menu_new.html">신메뉴</a></li>
+                        <li><a href="menu_coffee.html">커피</a></li>
+                        <li><a href="menu_drink.html">음료</a></li>
+                        <li><a href="menu_dessert.html">디저트</a></li>
+                        <li><a href="menu_md.html">MD</a></li>
+                    </ul>
+                </div>
+
+                <div class="howto">
+                    <h3 class="sitemap_txt1">HOW TO</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="join_franchise.html">가맹문의</a></li>
+                        <li><a href="store_analysis.html">상권분석</a></li>
+                    </ul>
+                </div>
+
+                <div class="store">
+                    <h3 class="sitemap_txt1">STORE</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="store.html">국내</a></li>
+                    </ul>
+                </div>
+
+                <div class="community">
+                    <h3 class="sitemap_txt1">COMMUNITY</h3>
+                    <ul class="sitemap_txt2">
+                        <li><a href="ivent.html">진행중인 이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="c_info_box">
+                <div class="c_info_box_child">
+                    <h3 class="info_title">INFORMATION</h3>
+                    <div class="address_box">
+                        <address class="etc_info">본사 서울특별시 강남구 논현로152길 21, 디오빌딩 5층 주식회사</address>
+                        <p class="etc_info_c">더 리터 대표 : 김나미</p>
+                    </div>
+                    <div class=tel_box>
+                        <p class="etc_info">TEL : 1670-7762</p>
+                        <p class="etc_info">FAX : 051-980-240</p>
+                        <p class="etc_info_e">E-mail : theliter@the-liter.com</p>
+                    </div>
+                    <div class="c_num">
+                        <p class="etc_info">사업자번호 : 666-87-00214</p>
+                        <p class="etc_info_n">통신판매신고번호 : 제 2018-부산금정-0041호</p>
+                    </div>
+                    <p class="copy">&copy; 2022. THELITER. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
